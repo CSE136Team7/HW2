@@ -12,7 +12,7 @@
 .popup {
   margin: 75px auto;
   padding: 20px;
-  background: #fff;
+  background: #666666;
   border: 1px solid #666;
   width: 300px;
   box-shadow: 0 0 50px rgba(0,0,0,0.5);
@@ -33,5 +33,9 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #666;
+  color: #fff;
+}
+
+.columns {
+  margin: 0;
 }
