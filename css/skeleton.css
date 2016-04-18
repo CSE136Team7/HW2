@@ -369,6 +369,9 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.u-folder-align {
+  vertical-align: middle;
+}
 
 
 /* Misc
