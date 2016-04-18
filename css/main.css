@@ -1,0 +1,254 @@
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-body {
+  padding: 2px 16px;
+  background-color:#028090;
+  color:#fff;
+
+}
+
+/*css*/
+
+body{
+  background-color: #595959;
+}
+
+
+.container{
+  width: 65%;
+}
+
+
+.twelve.columns{
+  background-color:#114B5F;
+  border-style: solid;
+  border: 1px;
+  border-color: #114B5F;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.fa-bars{
+  float:left;
+  margin-left: 2%;
+  margin-top:20px;
+}
+h4{
+  text-align: center;
+}
+.twelve.columns input{
+  margin-left: 22.5%;
+  margin-top: 15px;
+  width : 350px;
+}
+
+
+.three.columns{
+  background-color:#028090;
+  color: #fff;
+  border: 1px;
+  border-style: solid;
+  border-color: #028090;
+  border-radius: 3px;
+  margin-top: 2px;
+  margin-right: 3px;
+  width: 25%;
+  /*need to set height*/
+}
+.nine.columns{
+  color: #fff;
+  background-color:#028090;
+  border: 1px;
+  border-radius: 3px;
+  border-color: #028090;
+  border-style: solid;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 74%;
+}
+#table{
+  margin-left: 20%;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover {
+    color: #000;
+}
+
+input,textarea{
+  color:#000;
+}
+
+.modal-body label{
+  width: 15px;
+  display: inline-block;
+  font-weight: lighter;
+  padding-right: 85px;
+}
+.modal-body p{
+  margin-bottom: 0px;
+}
+.modal-body p *{
+  vertical-align: middle;
+}
+.modal-body hr {
+  height: 15px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #E4FDE1 inset;
+}
+
+ .columns,
+ .column{
+   margin: 0%;
+ }
+
+ form, h4{
+   margin-bottom: 0px;
+ }
+ .button-cancel{
+   color: #FFF;
+   border-color: #F44336;
+   background-color: #F44336;
+ }
+  .button-save{
+   color: #FFF;
+   border-color: #33C3F0;
+   background-color: #33C3F0;
+ }
+ .modal-body a{
+   color:#fff;
+ }
+.fa-trash{
+  padding-right: 125px;
+}
+.icon::before {
+    display: inline-block;
+    margin-right: .5em;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.5em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.fa-trash:hover{
+  color:#000;
+}
+.fa-star:hover{
+  color:#FFD700;
+}
+.fa-star{
+  color:#fff;
+}
+.fa-pencil-square-o{
+  color:#fff;
+}
+.fa-pencil-square-o:hover{
+  color:#000;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 960px ){
+  .container{
+    width: 90%;
+  }
+  .fa.bar{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .twelve.columns input{
+    margin-left: 15%;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  .three.columns{
+    border-radius: 5px;
+    width:100%;
+    margin-top: 5px;
+  }
+  .nine.columns{
+    border-radius: 5px;
+    margin-top: 5px;
+    width:100% !important;
+  }
+  h4{
+    text-align: center;
+  }
+  #table{
+    margin-left: 0px !important;
+  }
+  tr{
+    width: 100px;
+  }
+  td{
+    padding-left:15px;
+  }
+  .modal-content{
+    width: 95%;
+    height: 200px;
+    margin-left: 10px;
+  }
+  .modal-content input,textarea{
+    width: 250px;
+  }
+  .fa-trash{
+    padding-right: 77px;
+  }
+}

@@ -13,18 +13,19 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="modal.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -32,55 +33,61 @@
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div>
-    <div class="row" style="background-color:#666666;color:white;">
 
-        <div class="twelve columns" style="background-color:#262626;box-shadow: 0px 0px 5px #888888;padding-top:10px;padding-left:450px">
-          <div class="three columns"><input type="textarea" name="search" placeholder="Search"/></div>
-          <div class="three columns"><button class="button-primary">Add Bookmark</button></div>
-          <div class="three columns">
-            <select class="u-full-width" id="sortBar">
-              <option value="Option1"> A-Z </option>
-              <option value="Option2"> Z-A </option>
-              <option value="Option 3">Stared</option>
-              <option value="Option 4">Create Date</option>
-              <option value="Option 5">Last Visit Date</option>
-            </select>
-          </div>
-        </div>
+  <div class = "container">
+    <div class="row" >
+      <div class="twelve columns">
+          <a class="icon fa-bars" id="hide-folder" href="#"></a>
+        <input type="text" name="search" placeholder="search">
+      </div>
 
+      <div class="three columns" id="folder-div">
+        <h4 >Folder page</h4>
+      </div>
 
-       <div class="three columns" style="background-color:#333333; height:700px;box-shadow: 1px 0px 0px #888888;">
-         <h4>Folder page</h4>
-       </div>
-
-       <div class="nine columns"style="height: 700px;">
-         <table>
-           <tbody>
-             <tr>
-               <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png"style="width: 200px; height: 80px;" ></td>
-               <td><h3 class="one column">Google</h3></td>
-               <td>star</td>
-               <td>
-                 <a href="#popup1"><img src="https://maxcdn.icons8.com/windows8/PNG/26/Editing/edit-26.png" title="Edit" width="26">
-                 </a>
-                 <div id="popup1" class="overlay">
-                   <div class="popup" >
-                     <a href="#" class ="close">&times;</a>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                   </div>
-                 </div>
-               </td>
-              </tr>
-            </tbody>
-           </table>
-
-         </div>
-       </div>
-     </div>
-<!-- End Document
+      <div class="nine columns" id="main-div">
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>LOGO</td>
+              <td><a href="https://www.google.com/">https://www.google.com/</a></td>
+              <td><a class="icon fa-star" href="#"></a></td>
+              <td>
+                <a class="icon fa-pencil-square-o" id="myBtn" href="#"></a>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <span class="close">×</span>
+                      <h4>Add Bookmark</h4>
+                      <hr>
+                      <form style="">
+                        <label>Title</label>
+                        <input type="text" name="title" size="35">
+                        <label>URL</label>
+                        <input type="url" name="url" size="35">
+                        <p>
+                        <label>Description</label>
+                        <textarea type="text" name="description" cols="34"></textarea>
+                        </p>
+                        <label>Keywords</label>
+                        <input type="text" name="keywords" size="35">
+                        <hr>
+                        <a class="icon fa-star" href="#"></a>
+                        <a class="icon fa-trash" href="#"></a>
+                        <button type="submit" class="button-save">Save</button>
+                        <button type ="reset" class ="button-cancel">Cancel</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
