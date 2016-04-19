@@ -80,20 +80,50 @@ body{
   border-color: #114B5F;
   border-radius: 3px;
   margin-top: 10px;
+  text-align: center;
 }
-.fa-bars{
+/*.fa-folder-open{
   float:left;
   margin-left: 2%;
   margin-top:20px;
-}
+}*/
 h4{
   text-align: center;
 }
 .twelve.columns input{
-  margin-left: 22.5%;
+  margin-left: 17%;
+  margin-right: 17%;
+
   margin-top: 15px;
   width : 350px;
 }
+
+/*.fa-bars{
+  margin-left: 200px;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #028090;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 3px 4px 3px 12px;
+  color:#fff;
+}
+.dropdown-content a{
+display: block;
+text-decoration:none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 .three.columns{
@@ -104,10 +134,11 @@ h4{
   border-color: #028090;
   border-radius: 3px;
   margin-top: 2px;
-  margin-right: 3px;
+  margin-right: 6px;
   width: 25%;
   /*need to set height*/
 }
+
 .nine.columns{
   color: #fff;
   background-color:#028090;
@@ -116,12 +147,38 @@ h4{
   border-color: #028090;
   border-style: solid;
   margin-top: 2px;
-  margin-left: 3px;
-  width: 74%;
+  text-align: center;
 }
+.scrollbar {
+  max-width:100%;
+  height:auto;
+  overflow-y:scroll;
+  overflow-x:scroll;
+}
+.fa-folder{
+  display: block;
+  text-decoration: none;
+  padding-left: 30px;
+}
+.fa-folder h8{
+  padding-left: 20px;
+}
+.button-add{
+  width: 90%;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: #33C3F0;
+  color: #fff;
+  border-color: #33C3F0;
+}
+
 #table{
-  margin-left: 20%;
+  margin-bottom:0px;
+
 }
+
+
 
 a{
     color: #fff;
@@ -203,6 +260,13 @@ input,textarea{
   color:#000;
 }
 
+
+
+
+/**/
+
+/**/
+
 @media only screen and (min-width: 150px) and (max-width: 960px ){
   .container{
     width: 90%;
@@ -218,6 +282,11 @@ input,textarea{
     width: 200px;
     border-radius: 5px;
   }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
   .three.columns{
     border-radius: 5px;
     width:100%;
@@ -226,14 +295,18 @@ input,textarea{
   .nine.columns{
     border-radius: 5px;
     margin-top: 5px;
-    width:100% !important;
+    width:100% ;
+  }
+  .th{
+    width: 100%;
+    margin-left: 0px;
   }
   h4{
     text-align: center;
   }
-  #table{
-    margin-left: 0px !important;
-  }
+  /*#table{
+    margin-left: 0px ;
+  }*/
   tr{
     width: 100px;
   }
