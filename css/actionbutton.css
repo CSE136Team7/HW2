@@ -46,14 +46,14 @@
 }
 
 .actionButton {
-	background-color: #33C3F0;
+	background-color: #D32F2F;
 	border-radius: 50%;
   position: fixed;
-	height: 3em;
-	width: 3em;
+	height: 5em;
+	width: 5em;
 	z-index: 1000;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  top: 90%;
+  top: 85%;
   right: 20%;
 }
 .actionButton:hover {
