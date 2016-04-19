@@ -28,6 +28,10 @@
     animation-duration: 0.4s
 }
 
+#sortBar{
+  width: 308px;
+}
+
 /* remove table lines */
 th, td {
   border-bottom: 0;
@@ -298,7 +302,12 @@ input,textarea{
     width: 200px;
     border-radius: 5px;
   }
-
+  .scrollbar{
+    margin-top: 20px;
+  }
+  #sortBar{
+    width: 250px;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }

@@ -59,7 +59,7 @@
             <a class="icon fa-folder"  href="#"><h8>UCSD</h8></a>
             <a class="icon fa-folder"  href="#"><h8>Work</h8></a>
             <a class="icon fa-folder"  href="#"><h8>Anime</h8></a>
-            <button type="submit"  id="addfolder" class="button-add">Add</button>
+            <button type="submit" id="addfolder" class="button-add" onclick="showModal_folder()" >Add</button>
         </div>
       </div>
 
@@ -248,18 +248,18 @@
       </div>
       </div>
   </div>
-  <div id="myModal" class="modal">
+  <div id="myModal-folder" class="modal">
     <div class="modal-content">
       <div class="modal-body">
-        <span class="close">×</span>
+        <span class="close" onclick="closeModal_folder()">×</span>
         <h4>Add Folder</h4>
         <hr>
         <form>
           <input type="text" class="createFolder" name="title" size="40" style="display:block">
           <a class="icon fa-star" href="#"></a>
           <a class="icon fa-trash" href="#"></a>
-          <button type="submit" class="button-save">Save</button>
-          <button type ="reset" class ="button-cancel">Cancel</button>
+          <button type="submit" class="button-save" onclick="saveModal_folder()">Save</button>
+          <button type ="reset" class ="button-cancel" onclick="closeModal_folder()">Cancel</button>
         </form>
       </div>
     </div>
@@ -302,6 +302,15 @@
           </div>
         <div class="row">
           <input type="text" name="keywords" size="35">
+
+          <label>Folder</label>
+          <select id="sortBar">
+ +          <option value="" disabled selected></option>
+ +	        <option value="Option1">UCSD</option>
+ +  	      <option value="Option2">Work</option>
+ +  	      <option value="Option3">Anime</option>
+ +        </select>
+
         </div>
         </div>
           <hr>
