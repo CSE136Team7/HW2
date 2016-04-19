@@ -33,30 +33,36 @@
 
 </head>
 <body>
+  <style>
+
+  </style>
 
   <div class = "container">
     <div class="row">
       <div class="twelve columns">
           <a class="icon fa-bars" id="hide-folder" href="#"></a>
         <input type="text" name="search" placeholder="Find a bookmark">
-        <select id="sortBar">
-          <option value="" disabled selected>Sort by:</option>
-	        <option value="Option1"> A-Z </option>
-  	      <option value="Option2"> Z-A </option>
-  	      <option value="Option3">Starred</option>
-          <option value="Option4">Create Date</option>
-          <option value="Option5">Last Visit Date</option>
-        </select>
+        <div class="dropdown">
+          <a class="icon fa-folder-open" href="#"></a>
+          <div class="dropdown-content">
+            <a href="#">A-Z</a>
+            <a href="#">Z-A</a>
+            <a href="#">Starred</a>
+            <a href="#">Create Date</a>
+            <a href="#">Last Visit Date</a>
+          </div>
+        </div>
       </div>
 
       <div class="three columns" id="folder-div">
-        <h4>Folders</h4>
-        <img class="u-folder-align" src="images/folder.png">All</img><br>
-        <img class="u-folder-align" src="images/folder.png">Most Visited</img><br>
-        <img class="u-folder-align" src="images/folder.png">Favorites</img><br>
-        <img class="u-folder-align" src="images/plus.png">Create new folder</img>
-
+        <div class="scrollbar" id="scrollbar-custom">
+            <a class="icon fa-folder"  href="#"><h8>UCSD</h8></a>
+            <a class="icon fa-folder"  href="#"><h8>Work</h8></a>
+            <a class="icon fa-folder"  href="#"><h8>Anime</h8></a>
+            <button type="submit"  id="addfolder" class="button-add">Add</button>
+        </div>
       </div>
+
 
       <div class="nine columns" id="main-div">
         <table id="table" class="u-max-full-width">
@@ -240,10 +246,26 @@
           </tbody>
         </table>
       </div>
-    </div>
-    <div class="floatingContainer">
-      <div class="actionButton" href="#" onclick="showModal()"><a class="icon fa-plus" style="font-size:25px"></a>
       </div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <span class="close">×</span>
+        <h4>Add Folder</h4>
+        <hr>
+        <form>
+          <input type="text" class="createFolder" name="title" size="40" style="display:block">
+          <a class="icon fa-star" href="#"></a>
+          <a class="icon fa-trash" href="#"></a>
+          <button type="submit" class="button-save">Save</button>
+          <button type ="reset" class ="button-cancel">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="floatingContainer">
+    <div class="actionButton" href="#" onclick="showModal()"><a class="icon fa-plus" style="font-size:25px"></a>
     </div>
   </div>
 
