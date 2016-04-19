@@ -28,6 +28,11 @@
     animation-duration: 0.4s
 }
 
+#sortBar{
+  width: 308px;
+  text-align: center;
+}
+
 /* remove table lines */
 th, td {
   border-bottom: 0;
