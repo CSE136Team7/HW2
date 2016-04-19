@@ -311,6 +311,7 @@ input,textarea{
   .container{
     width: 90%;
   }
+ 
   
   .fa.bar{
     float: left;
@@ -385,7 +386,7 @@ input,textarea{
     width: 250px;
   }
   .fa-trash{
-    padding-right: 77px;
+    padding-right: 5px;
   }
   .actionButton{
     left: 75%
