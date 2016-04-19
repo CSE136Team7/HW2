@@ -33,9 +33,6 @@
 
 </head>
 <body>
-  <style>
-
-  </style>
 
   <div class = "container">
     <div class="row">
@@ -56,9 +53,9 @@
 
       <div class="three columns" id="folder-div">
         <div class="scrollbar" id="scrollbar-custom">
-            <a class="icon fa-folder"  href="#"><h8>UCSD</h8></a>
-            <a class="icon fa-folder"  href="#"><h8>Work</h8></a>
-            <a class="icon fa-folder"  href="#"><h8>Anime</h8></a>
+            <a class="icon fa-folder"  href="#"><b>UCSD</b></a>
+            <a class="icon fa-folder"  href="#"><b>Work</b></a>
+            <a class="icon fa-folder"  href="#"><b>Anime</b></a>
             <button type="submit" id="addfolder" class="button-add" onclick="showModal_folder()" >Add</button>
         </div>
       </div>
@@ -265,7 +262,7 @@
     </div>
   </div>
   <div class="floatingContainer">
-    <div class="actionButton" href="#" onclick="showModal()"><a class="icon fa-plus" style="font-size:25px"></a>
+    <div class="actionButton" onclick="showModal()"><a class="icon fa-plus" style="font-size:25px"></a>
     </div>
   </div>
 
@@ -293,7 +290,7 @@
           <label>Description</label>
           </div>
         <div class="row">
-          <textarea type="text" name="description" cols="34"></textarea>
+          <textarea name="description" cols="34"></textarea>
         </div>
         <div class="row">
           <label>Keywords</label>
@@ -306,7 +303,6 @@
           </div>
           <div class="row">
           <select id="sortBar">
-            <option value="" disabled selected></option>
  	          <option value="Option1">UCSD</option>
    	        <option value="Option2">Work</option>
    	        <option value="Option3">Anime</option>
