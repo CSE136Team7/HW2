@@ -30,7 +30,6 @@
 
 #sortBar{
   width: 308px;
-  text-align: center;
 }
 
 /* remove table lines */
@@ -303,7 +302,12 @@ input,textarea{
     width: 200px;
     border-radius: 5px;
   }
-
+  .scrollbar{
+    margin-top: 20px;
+  }
+  #sortBar{
+    width: 250px;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
