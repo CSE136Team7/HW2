@@ -25,15 +25,21 @@ window.onload = function(){
 
   // hides the folder protion
   hideFolder.onclick = function() {
-    if (folderDiv.style.display=="" || folderDiv.style.display=="block"){
-      folderDiv.style.display = "none";
-      mainDiv.style.width = "100%";
-      tableMargin.style.marginLeft = "25%";
+    if (folderDiv.className==="three columns on-folder"){
+    	folderDiv.className = "three columns off-folder";
+      //folderDiv.style.display = "none";
+      mainDiv.className = "nine columns off-main";
+    	//mainDiv.style.width = "100%";
+      tableMargin.className = "u-max-full-width off-table";
+      //tableMargin.style.marginLeft = "25%";
     }
     else{
-      folderDiv.style.display = "block";
-      mainDiv.style.width = "74%";
-      tableMargin.style.marginLeft = "0%";
+    	folderDiv.className = "three columns on-folder";
+      //folderDiv.style.display = "block";
+    	mainDiv.className = "nine columns on-main";
+      //mainDiv.style.width = "74%";
+    	tableMargin.className = "u-max-full-width on-table";
+      //tableMargin.style.marginLeft = "0%";
     }
   }
 
