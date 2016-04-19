@@ -262,4 +262,7 @@ input,textarea{
   .fa-trash{
     padding-right: 77px;
   }
+  .actionButton{
+    left: 75%
+  }
 }
