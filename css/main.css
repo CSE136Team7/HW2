@@ -28,6 +28,11 @@
     animation-duration: 0.4s
 }
 
+/* remove table lines */
+th, td {
+  border-bottom: 0;
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
