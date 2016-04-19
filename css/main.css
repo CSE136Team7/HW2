@@ -212,8 +212,8 @@ input,textarea{
 }
 .fa-plus{
   display: block;
-  padding-top: 22px;
-  padding-left: 22px;
+  padding-top: 30%;
+  padding-left: 30%;
 }
 .fa-plus:hover{
   color: white;
