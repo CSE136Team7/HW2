@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/actionbutton.css">
 
   <!-- Script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,9 +34,8 @@
 </head>
 <body>
 
-
   <div class = "container">
-    <div class="row" >
+    <div class="row">
       <div class="twelve columns">
           <a class="icon fa-bars" id="hide-folder" href="#"></a>
         <input type="text" name="search" placeholder="Find a bookmark">
@@ -47,7 +47,7 @@
           <option value="Option4">Create Date</option>
           <option value="Option5">Last Visit Date</option>
         </select>
-        <button type="submit" class="button-primary u-pull-right">Add Bookmark</button>
+        <button type="submit" class="button-primary u-pull-right actionbar">Add Bookmark</button>
       </div>
 
       <div class="three columns" id="folder-div">
@@ -98,6 +98,36 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+    <div class="floatingContainer">
+      <div class="actionButton" href="#" onclick="showModal()"><a class="icon fa-plus"></a>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">×</span>
+              <h4>Add Bookmark</h4>
+              <hr>
+              <form style="">
+                <label>Title</label>
+                <input type="text" name="title" size="35">
+                <label>URL</label>
+                <input type="url" name="url" size="35">
+                <p>
+                <label>Description</label>
+                <textarea type="text" name="description" cols="34"></textarea>
+                </p>
+                <label>Keywords</label>
+                <input type="text" name="keywords" size="35">
+                <hr>
+                <a class="icon fa-star" href="#"></a>
+                <a class="icon fa-trash" href="#"></a>
+                <button type="submit" class="button-save">Save</button>
+                <button type ="reset" class ="button-cancel">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
