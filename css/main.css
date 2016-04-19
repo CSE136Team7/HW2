@@ -28,6 +28,11 @@
     animation-duration: 0.4s
 }
 
+/* remove table lines */
+th, td {
+  border-bottom: 0;
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -72,6 +77,9 @@ body{
   width: 65%;
 }
 
+.actionbar{
+  margin-top: 15px;
+}
 
 .twelve.columns{
   background-color:#114B5F;
@@ -259,6 +267,14 @@ input,textarea{
 .fa-pencil-square-o:hover{
   color:#000;
 }
+.fa-plus{
+  display: block;
+  padding-top: 30%;
+  padding-left: 30%;
+}
+.fa-plus:hover{
+  color: white;
+}
 
 
 
@@ -323,5 +339,8 @@ input,textarea{
   }
   .fa-trash{
     padding-right: 77px;
+  }
+  .actionButton{
+    left: 75%
   }
 }
