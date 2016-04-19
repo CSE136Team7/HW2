@@ -94,6 +94,7 @@ body{
   margin-top: 10px;
   text-align: center;
 }
+
 /*.fa-folder-open{
   float:left;
   margin-left: 2%;
@@ -302,6 +303,15 @@ input,textarea{
     width: 200px;
     border-radius: 5px;
   }
+  
+  #scrollbar-custom{
+  	margin-top: 20px;
+  }
+  
+  #sortBar {
+  	width: 250px;
+  }
+  
   .scrollbar{
     margin-top: 20px;
   }
@@ -343,6 +353,14 @@ input,textarea{
     height: 200px;
     margin-left: 10px;
   }
+  
+  #sortBar{
+  	width:300px;
+  }
+  #scrollbar-custom{
+  	margin-top: 10px;
+  }
+  
   .modal-content input,textarea{
     width: 250px;
   }
@@ -352,4 +370,7 @@ input,textarea{
   .actionButton{
     left: 75%
   }
+  
+  
+  
 }
